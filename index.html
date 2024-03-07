@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Set compatibility with IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set viewport for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Set the title of the page -->
+    <title>Animated Gooey Bubble Button</title>
+</head>
+
+<body>
+    <!-- Define SVG element for filter -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <!-- Define filter definitions -->
+        <defs>
+            <!-- Define a filter with id "gooey" -->
+            <filter id="gooey">
+                <!-- Apply Gaussian blur to the source graphic -->
+                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                <!-- Apply a color matrix to adjust contrast -->
+                <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                    result="highContrastGraphic" />
+                <!-- Composite the source graphic with the high contrast graphic -->
+                <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+            </filter>
+        </defs>
+    </svg>
+
+    <!-- Create a button with id "gooey-button" -->
+    <button id="gooey-button">
+        <!-- Button text -->
+        Code with Aarzoo
+        <!-- Container for bubble animations -->
+        <span class="bubbles">
+            <!-- 10 individual bubble elements -->
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+        </span>
+    </button>
+</body>
+
+</html>
