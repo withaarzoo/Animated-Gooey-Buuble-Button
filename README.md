@@ -1,6 +1,6 @@
 # Animated Gooey Bubble Button
 
-This repository contains code for an animated gooey bubble button implemented using HTML and CSS. The button creates a visually appealing effect with animated bubbles emanating from its center upon interaction .
+This repository contains code for an animated gooey bubble button implemented using HTML and CSS. The button creates a visually appealing effect with animated bubbles emanating from its center upon interaction.
 
 ## Preview
 ![preview](https://github.com/withaarzoo/Animated-Gooey-Buuble-Button/assets/59678435/75af70ca-cc08-4188-a57b-62ee0820d9b1)
